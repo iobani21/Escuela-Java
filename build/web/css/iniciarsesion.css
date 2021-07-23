@@ -1,0 +1,196 @@
+body{
+    background: url(../images/seuss_back.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+*{
+     margin: 0;
+     padding: 0;
+     font-size: 13px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-position: center;
+    background-size: cover;
+    position: absolute;  
+}
+
+.form-box{
+    width: 370px;
+    height: 455px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.button-box{
+    width: 240px;
+    margin: 30px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #e0e0e0;
+    border-radius: 30px;
+}
+
+#elegir{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 120px;
+    height: 100%;
+    background: linear-gradient( to right,rgba(63, 81, 181, 0.7), rgba(0, 188, 212, 0.7));
+    border-radius: 30px;
+    transition: 0.8s;
+}
+
+.toggle-btn{
+     padding: 10px 22px;
+     cursor: pointer;
+     background: transparent;
+     border: 0px;
+     outline: none;
+     position: relative;
+}
+
+.input-group{
+     top: 180px;
+     position: absolute;
+     width: 280px;
+     transition: 0.8s;
+}
+
+#login{
+     left: 50px;
+}
+
+.input-field{
+     width: 100%;
+     padding: 10px 0;
+     margin: 5px 0;
+     border-left: 0;
+     border-top: 0;
+     border-right: 0;
+     border-bottom: 2px solid #004d40;
+     outline: none;
+     background: transparent;
+}
+
+.submit-btn{
+     width: 85%;
+     padding: 10px 30px;
+     cursor: pointer;
+     display: block;
+     margin: auto;
+     background: linear-gradient( to right,rgba(63, 81, 181, 0.7), rgba(0, 188, 212, 0.7));
+     border: 0px;
+     outline: none;
+     border-radius: 30px;
+}
+
+.check-box{
+     margin: 30px 10px 30px 0;
+}
+
+#informacion{
+    left: 450px;
+}
+
+#div_info{
+    font-weight: bold;
+    font-size:20px;
+}
+
+#imagen{
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 240px;
+    text-align: center;
+    opacity:0.5;
+}
+
+#envio:hover {
+  background-color: green;
+}
+
+#footer_{
+    font-weight: bold;
+    text-align: center;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato:900);
+*, *:before, *:after{
+  box-sizing:border-box;
+}
+body{
+  font-family: 'Lato', sans-serif;
+    ;
+}
+div.foo{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.letter{
+  display: inline-block;
+  font-weight: 900;
+  font-size: 6em;
+  margin: 0.2em;
+  position: relative;
+  color: #00B4F1;
+  transform-style: preserve-3d;
+  perspective: 400;
+  z-index: 1;
+}
+.letter:before, .letter:after{
+  position:absolute;
+  content: attr(data-letter);
+  transform-origin: top left;
+  top:0;
+  left:0;
+}
+.letter, .letter:before, .letter:after{
+  transition: all 0.3s ease-in-out;
+}
+.letter:before{
+  color: #fff;
+  text-shadow: 
+    -1px 0px 1px rgba(255,255,255,.8),
+    1px 0px 1px rgba(0,0,0,.8);
+  z-index: 3;
+  transform:
+    rotateX(0deg)
+    rotateY(-15deg)
+    rotateZ(0deg);
+}
+.letter:after{
+  color: rgba(0,0,0,.11);
+  z-index:2;
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    skew(0deg,1deg);
+}
+.letter:hover:before{
+  color: #fafafa;
+  transform:
+    rotateX(0deg)
+    rotateY(-40deg)
+    rotateZ(0deg);
+}
+.letter:hover:after{
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(40deg)
+    rotateZ(0deg)
+    skew(0deg,22deg);
+}
